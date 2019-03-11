@@ -8,7 +8,6 @@ var userManagementPage = new userManagementPage();
 class userManagementHelper {
 
     loginAsBankManager() { 
-        generalHelper.clickElement(bankManagerPage.bankManagerLoginButton(),'bank manager login button');       
     }
 
     addKnownCustomerName() {
