@@ -1,6 +1,5 @@
 'use strict';
-var customerPage = require('../elements/customer.page.js');
-var customerPage = new customerPage();
+
 var generalHelper = require('./generalHelper.js');
 var generalHelper = new generalHelper();
 var userManagementPage = require('../elements/userManagement.page.js');
