@@ -1,0 +1,24 @@
+{
+  "name": "sample-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "",
+  "capabilities": {
+    "browserName": "chrome"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/protractor conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "httpbackend": "^2.0.0",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "dependencies": {
+    "npm": "^5.7.1",
+    "to": "^0.2.9",
+    "update": "^0.7.4"
+  }
+  
+}
