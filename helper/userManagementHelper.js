@@ -41,8 +41,11 @@ class userManagementHelper {
 
     createClassSectionuser() {
         var userName = 'autoUser' + ' ' + Date.now();
+        generalHelper.clickElement(userManagementElements.addStudentBtn(), "add student button is not displayed", 3000);
         generalHelper.clickElement(userManagementElements.classDDL(), "class dropdown click", 3000);
-        generalHelper.clickElement(userManagementElements.classChoice('1st Grade'), "class dropdown click", 3000);
+        generalHelper.clickElement(userManagementElements.classChoice(), "class dropdown select class", 3000);
+        generalHelper.clickElement(userManagementElements.sectionDDL(), "section dropdown", 3000);
+
         generalHelper.clickElement(userManagementElements.addStudentBtn(), "add student button is not displayed", 3000);
         generalHelper.sendKey(userManagementElements.firstNameInput(), userName, 'first name input');
         generalHelper.sendKey(userManagementElements.secondNameInput(), userName, 'second name input');

@@ -17,7 +17,6 @@ class APIhelper {
         browser.executeScript('localStorage.setItem(\'currentUser\', \'' + response + '\' );');
     }
 
-
     postUrl(url, data) {
         return new Promise((resolve, reject) => {
             request.post({

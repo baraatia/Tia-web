@@ -132,8 +132,7 @@ class userManagementElements {
 
     getAllusersNames() {
         var elment = $$('tbody tr');
-        var allNames = generalHelper.getTextPromise(elment, 'all users names')
-        return allNames;
+        return generalHelper.getTextPromise(elment, 'all users names');
     }
 
     lastPaginatorArrow() {
@@ -141,11 +140,15 @@ class userManagementElements {
     }
 
     classDDL() {
-        return element(By.xpath('//*[@id="mat-select-10"]/div/div[2]/div'));
+        return $('.form_group div:nth-of-type(1) div:nth-of-type(2) .mat-select-arrow');
     }
 
-    async classChoice(stag) {
-        return await element(by.cssContainingText('.mat-option-text', stag));
+    classChoice() {
+        return  element(by.cssContainingText('.mat-option-text', '1st Grade'));
+    }
+
+    sectionDDL() {
+        return $('mat-select[id="mat-select-148"] .mat-select-arrow'); //$('.form_group div:nth-of-type(2) div:nth-of-type(2) .mat-select-arrow');
     }
 
 
